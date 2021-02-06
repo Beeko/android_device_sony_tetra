@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_tetra_defconfig
+TARGET_KERNEL_SOURCE := kernel/sony/tetra
+TARGET_KERNEL_CONFIG := tetra_defconfig
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tetra/device.mk)
@@ -20,8 +21,8 @@ $(call inherit-product, vendor/sony/tetra/tetra-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_tiny.mk)
 
-PRODUCT_NAME := aosp_tetra
+PRODUCT_NAME := tetra
 PRODUCT_DEVICE := tetra
-PRODUCT_MODEL := Xperia SW3(AOSP)
+PRODUCT_MODEL := Smartwatch 3
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
